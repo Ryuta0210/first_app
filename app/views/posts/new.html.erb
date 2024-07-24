@@ -1,0 +1,6 @@
+<h1>This is new page</h1>
+
+<%= form_with url: "/posts", method: :post, loacl: true do |form| %>
+  <%= form.text_field  :content %>
+  <%= form.submit  "投稿します" %>
+  <%end%>
